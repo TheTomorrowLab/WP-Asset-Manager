@@ -1,7 +1,19 @@
-WP Plugin Status
+WP Plugin Status - Beta
 ==============
 
 **Author:** *J Burns, Pierce Communications*
+**Email:** *me@johnburns87.com*
+
+Please email me any bugs and issues. Thanks!
+
+Instructions
+--------------
+
+- Add folder to wp-content/plugins/ directory
+- Login to wp-admin
+- Go to plugins
+- Activate plugin
+- Put the following code into your themes header and footer.
 
 header.php 
 --------------

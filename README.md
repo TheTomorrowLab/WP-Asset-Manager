@@ -1,8 +1,11 @@
 WP Plugin Status - Beta
 ==============
 
-**Author:** *J Burns, Pierce Communications*
+**Author:** *John Burns - Pierce Communications*
+
 **Email:** *me@johnburns87.com*
+
+**Website** *www.piercecommunications.co.uk*
 
 Please email me any bugs and issues. Thanks!
 
@@ -14,6 +17,8 @@ Instructions
 - Go to plugins
 - Activate plugin
 - Put the following code into your themes header and footer.
+- All plugin scripts and stylesheets will be disabled by default
+- When editing a page, a new widget will appear below the MCE editor where you can enable / disable scripts.
 
 header.php 
 --------------

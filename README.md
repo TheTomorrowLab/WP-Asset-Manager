@@ -1,7 +1,7 @@
 WP Plugin Status - Beta
 ==============
 
-A wordpress plugin that deactivates all wp plugin styles and scripts per page to increase load time.
+A wordpress plugin that deactivates individual or all wp plugin styles and scripts per page to increase load time.
 
 
 
@@ -59,7 +59,7 @@ Features
 - Enable and disable wordpress plugin scripts and stylesheets per page
 - Enable and disable custom scripts and stylesheets per page
 
-Issues
+Future Releases
 --------------
 
-- Cant delete custom styles and scripts. Later release
+- Ability to delete custom styles and scripts.

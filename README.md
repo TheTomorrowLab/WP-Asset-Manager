@@ -1,6 +1,10 @@
 WP Plugin Status - Beta
 ==============
 
+A wordpress plugin that deactivates all wp plugin styles and scripts per page to increase load time.
+
+
+
 **Author:** *John Burns - Pierce Communications*
 
 **Email:** *me@johnburns87.com*
@@ -9,7 +13,10 @@ WP Plugin Status - Beta
 
 Please email me any bugs and issues. Thanks!
 
-Instructions
+
+
+
+Installation
 --------------
 
 - Add folder to wp-content/plugins/ directory
@@ -45,3 +52,8 @@ footer.php
 	<?php if (!empty($scripts_array[0])) { foreach($scripts_array as $script): ?>
 	<script src="<?php echo $script; ?>"></script>
 	<?php endforeach; } ?>
+
+Issues
+--------------
+
+- Cant delete custom styles and scripts. Later release

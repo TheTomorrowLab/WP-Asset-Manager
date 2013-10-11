@@ -57,7 +57,7 @@ Features
 --------------
 
 - Enable and disable wordpress plugin scripts and stylesheets per page
-- Enable and custom scripts and stylesheets per page
+- Enable and disable custom scripts and stylesheets per page
 
 Issues
 --------------

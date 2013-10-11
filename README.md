@@ -64,8 +64,8 @@ Features
 Screenshots
 --------------
 
-- Edit page widget: https://www.diigo.com/item/image/4cohd/v5ri
-- Custom scripts and styles: https://www.diigo.com/item/image/4cohd/1utp
+- Edit page widget: https://www.diigo.com/item/image/4cohd/9wtp
+- Custom scripts and styles: https://www.diigo.com/item/image/4cohd/h6b1
 - Add custom script: https://www.diigo.com/item/p/qdaddsszbrdpcaqqdzbbpeabqa/f48cbb8d4f2ff0aa3035b52dc8cb1b17
 
 

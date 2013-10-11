@@ -4,7 +4,7 @@ Plugin Name: WP Plugin Status
 Plugin URI: http://www.piercecommunications.co.uk
 Description: Remove plugin styles and scripts for pages that dont need them.
 Author: J Burns 
-Version: 1.0 
+Version: 1.0
 Author URI: http://www.piercecommunications.co.uk 
 */
 

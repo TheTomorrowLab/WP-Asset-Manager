@@ -61,6 +61,14 @@ Features
 - Enable and disable wordpress plugin scripts and stylesheets per page
 - Enable and disable custom scripts and stylesheets per page
 
+Screenshots
+--------------
+
+- Edit page widget: https://www.diigo.com/item/image/4cohd/v5ri
+- Custom scripts and styles: https://www.diigo.com/item/image/4cohd/1utp
+- Add custom script: https://www.diigo.com/item/p/qdaddsszbrdpcaqqdzbbpeabqa/f48cbb8d4f2ff0aa3035b52dc8cb1b17
+
+
 Licence
 --------------
 

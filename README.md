@@ -31,6 +31,7 @@ header.php
 --------------
 
 	<?php
+	wp_reset_query();
 	global $post;
 	$styles_query = get_post_meta( $post->ID, '_active_styles', true );
 	$styles_array = unserialize($styles_query);
@@ -44,6 +45,7 @@ footer.php
 --------------
 
 	<?php
+	wp_reset_query();
 	global $post;
 	$scripts_query = get_post_meta( $post->ID, '_active_scripts', true );
 	$scripts_array = unserialize($scripts_query);

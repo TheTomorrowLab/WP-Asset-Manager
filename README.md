@@ -53,6 +53,12 @@ footer.php
 	<script src="<?php echo $script; ?>"></script>
 	<?php endforeach; } ?>
 
+Features
+--------------
+
+- Enable and disable wordpress plugin scripts and stylesheets per page
+- Enable and custom scripts and stylesheets per page
+
 Issues
 --------------
 

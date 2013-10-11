@@ -308,22 +308,25 @@ if (CURRENT_USER_PATH != PLUGIN_PATH){
         //
         //////////////////////////////////////////        
 
-        foreach ($custom_scripts as $script):
+        if (!empty($custom_scripts)){  
 
-            $post_data = isset($_POST['script_'.$ii]) && !empty($_POST['script_'.$ii]) ? $_POST['script_'.$ii] : 0;
+            foreach ($custom_scripts as $script):
 
-            if ($post_data == 1){
+                $post_data = isset($_POST['script_'.$ii]) && !empty($_POST['script_'.$ii]) ? $_POST['script_'.$ii] : 0;
 
-                $active_scripts[] = $script;
-        
-            }
+                if ($post_data == 1){
 
-        $ii++; endforeach;
+                    $active_scripts[] = $script;
+            
+                }
 
-        $clean_active_scripts = serialize($active_scripts);
+            $ii++; endforeach; 
 
-        add_post_meta($post_ID, '_active_scripts', $clean_active_scripts, true) or update_post_meta($post_ID, '_active_scripts', $clean_active_scripts);
+            $clean_active_scripts = serialize($active_scripts);
 
+            add_post_meta($post_ID, '_active_scripts', $clean_active_scripts, true) or update_post_meta($post_ID, '_active_scripts', $clean_active_scripts);
+
+        }
 
 
         //////////////////////////////////////////
@@ -332,22 +335,25 @@ if (CURRENT_USER_PATH != PLUGIN_PATH){
         //
         //////////////////////////////////////////
 
-        foreach ($custom_styles as $style):
+        if (!empty($custom_styles)){
 
-            $post_data = isset($_POST['css_'.$iii]) && !empty($_POST['css_'.$iii]) ? $_POST['css_'.$iii] : 0;
+            foreach ($custom_styles as $style):
 
-            if ($post_data == 1){
+                $post_data = isset($_POST['css_'.$iii]) && !empty($_POST['css_'.$iii]) ? $_POST['css_'.$iii] : 0;
 
-                $active_styles[] = $style;
-        
-            }
+                if ($post_data == 1){
 
-        $iii++; endforeach;        
+                    $active_styles[] = $style;
+            
+                }
 
-        $clean_active_styles = serialize($active_styles);
+            $iii++; endforeach;        
 
-        add_post_meta($post_ID, '_active_styles', $clean_active_styles, true) or update_post_meta($post_ID, '_active_styles', $clean_active_styles);
+            $clean_active_styles = serialize($active_styles);
 
+            add_post_meta($post_ID, '_active_styles', $clean_active_styles, true) or update_post_meta($post_ID, '_active_styles', $clean_active_styles);
+
+        }
 
     }
 

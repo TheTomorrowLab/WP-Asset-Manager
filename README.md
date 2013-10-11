@@ -61,6 +61,11 @@ Features
 - Enable and disable wordpress plugin scripts and stylesheets per page
 - Enable and disable custom scripts and stylesheets per page
 
+Licence
+--------------
+
+GPLv2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+
 Future Releases
 --------------
 

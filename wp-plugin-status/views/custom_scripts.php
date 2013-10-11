@@ -112,9 +112,7 @@ if (isset($_POST['submit_scripts'])){
         <td width="10%">
             <label for="custom_src"><?php echo $script; ?></label>
         </td>
-        <td>
-            <a href="#" id="<?php echo $i; ?>">Delete</a>
-        </td>        
+        <td></td>        
       </tr>
     <?php $i++; endforeach; ?>
     </tbody>

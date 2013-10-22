@@ -8,7 +8,7 @@ Version: 1.0
 Author URI: http://www.piercecommunications.co.uk 
 */
 
-define('PLUGIN_PATH','http://'.$_SERVER['HTTP_HOST'].'/wp-content/plugins/wp-plugin-status/');
+define('PLUGIN_PATH',plugin_dir_url(__FILE__));
 define('CURRENT_USER_PATH','http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'/');
 
 if (CURRENT_USER_PATH != PLUGIN_PATH){

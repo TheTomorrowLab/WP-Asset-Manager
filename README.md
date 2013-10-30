@@ -1,4 +1,4 @@
-WP Asset Status - Beta
+WP Asset Manager - Beta
 ==============
 
 A wordpress plugin that deactivates individual or all wp plugin styles and scripts per page to increase load time.

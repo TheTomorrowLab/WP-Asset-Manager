@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== WP Asset Manager ===
 Contributors: johnburns87
 Tags: performance, plugins, styles, scripts
 Requires at least: 3.0.1

@@ -1,6 +1,6 @@
 <?php
 /* 
-Plugin Name: WP Plugin Status
+Plugin Name: WP Asset Manager
 Plugin URI: http://www.piercecommunications.co.uk
 Description: Remove plugin styles and scripts for pages that dont need them.
 Author: J Burns 
@@ -8,6 +8,7 @@ Version: 1.0
 Author URI: http://www.piercecommunications.co.uk 
 */
 
+define('PLUGIN_NAME','WP Asset Manager';
 define('PLUGIN_PATH',plugin_dir_url(__FILE__));
 define('CURRENT_USER_PATH','http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'/');
 
@@ -24,16 +25,16 @@ if (CURRENT_USER_PATH != PLUGIN_PATH){
     function wp_plugin_status() {
 
         // Menu name
-        add_menu_page("Plugin Status", "Plugin Status", 0, "plugin-status", "plugin_status", PLUGIN_PATH."menu_icon.png");
+        add_menu_page("WP Asset Manager", "Asset Manager", 0, "asset-manager", "asset_manager", PLUGIN_PATH."menu_icon.png");
 
-        // Settings
-        add_submenu_page("plugin-status", "Custom Scripts", "Custom Scripts", 0, "custom-scripts", "custom_scripts");
+        // Custom Scripts
+        add_submenu_page("asset-manager", "Custom Scripts", "Custom Scripts", 0, "custom-scripts", "custom_scripts");
 
-        // Hide Users Page
-        add_submenu_page("plugin-status", "Custom Styles", "Custom Styles", 0, "custom-styles", "custom_styles");
+        // Custom Styles
+        add_submenu_page("asset-manager", "Custom Styles", "Custom Styles", 0, "custom-styles", "custom_styles");
 
         // Hide the first Subpage
-        remove_submenu_page('plugin-status','plugin-status');
+        remove_submenu_page('asset-manager','asset-manager');
 
     }
 
@@ -111,7 +112,7 @@ if (CURRENT_USER_PATH != PLUGIN_PATH){
         foreach ($screens as $screen) {
             add_meta_box(
                 'myplugin_sectionid',
-                __( 'Plugin status', 'myplugin_textdomain' ),
+                __( 'Asset Manager', 'myplugin_textdomain' ),
                 'wp_plugin_status_content',
                 $screen
             );
@@ -149,9 +150,9 @@ if (CURRENT_USER_PATH != PLUGIN_PATH){
 
         echo '<thead>';
         echo '<tr>';
-        echo '<th>Type</th>';
-        echo '<th>Name</th>';
-        echo '<th>Status</th>';
+        echo '<td><strong>Type</strong></td>';
+        echo '<td><strong>Name</strong></td>';
+        echo '<td><strong>Status</strong></td>';
         echo '</tr>';
         echo '</thead>';
 
